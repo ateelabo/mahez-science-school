@@ -1,0 +1,49 @@
+ <!DOCTYPE html> 
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>STUDENT FEEDBACK</title>
+	<style>
+		body {
+			font-family:arial, sans-serif;
+			background-color:#f0f0f0;
+			text-align:center;
+			padding: 40px;
+    }
+	
+	a {
+		display: inline-block;
+		margin-top: 20px;
+		padding: 10px 20px;
+		background-color:#007bff;
+		color:white;
+		text-decoration:none;
+		border-radius:4px;
+	}
+a:hover { 
+    background-color:#0056b3;
+   }
+</style>
+<body>
+ 
+<h1>STUDENT FEEDBACK</h1>
+<h2>Write Your comment</h2>
+<form action="save_comment.php"
+method="post">
+  <input type="text"name="name"
+placeholder="Your Name"required><br><br>
+<textarea name="comment"placeholder="Your Comment"required></textarea><br><br>
+<button type="submit">Post Comment</button>
+</form>
+<h3> Write Your Feedback</h3>
+<form section="save_comment.php"
+method="post">
+<!--Optional Name Field-->
+<input type="text" name="name" placeholder="Your Name"><br><br>
+<!--Comment Box-->
+<textarea name="comment"placeholder="Write Your Feedback Here..."required></textarea><br><br>
+	<button type="submit">Submit</button>
+</form>
+ 
+</body>
+</html>
